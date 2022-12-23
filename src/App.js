@@ -1,23 +1,13 @@
-import logo from './logo.svg';
 import './App.css';
+import { ButtonAlert } from './components/button/button';
+import { ColorRedText } from './components/text/text';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <ButtonAlert></ButtonAlert>
+      <ButtonAlert label='Bixar CV'></ButtonAlert>
+      <ColorRedText color='red'>Esse é um parágrafo maiúsculo e colorido do componente ColorRedText </ColorRedText>
     </div>
   );
 }
